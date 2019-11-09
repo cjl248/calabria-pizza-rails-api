@@ -16,7 +16,7 @@ categories.each do |category|
   MenuCategory.create(name: category)
 end
 
-m=MenuCategory.create(name: "hero", )
+MenuCategory.create(name: "hero")
 
 # ==================================================== #
 # ====================[ITEMS]========================= #
@@ -48,24 +48,58 @@ MenuItem.create(
   menu_category: MenuCategory.find_by(name: "hero")
 )
 MenuItem.create(
+  name: "sausage_peppers_onions_hero",
+  price: 795,
+  menu_category: MenuCategory.find_by(name: "hero")
+)
+MenuItem.create(
   name: "eggplant_parmigiana_hero",
   price: 850,
   menu_category: MenuCategory.find_by(name: "hero")
 )
 MenuItem.create(
-  name: "sausage_peppers_onion_hero",
-  price: 795,
-  menu_category: MenuCategory.find_by(name: "hero")
+  name: "sausage_broccoli_rabe_mozzarella_hero",
+  price: 895,
+  menu_category: MenuCategory.find_by("hero")
 )
-# MenuItem.create(name: "", price: 0.00, menu_category: MenuCategory.find_by("hero"))
-# MenuItem.create(name: "", price: 0.00, menu_category: MenuCategory.find_by("hero"))
-# MenuItem.create(name: "", price: 0.00, menu_category: MenuCategory.find_by("hero"))
-# MenuItem.create(name: "", price: 0.00, menu_category: MenuCategory.find_by("hero"))
-# MenuItem.create(name: "", price: 0.00, menu_category: MenuCategory.find_by("hero"))
-
+MenuItem.create(
+  name: "grilled_chicken_roasted_red_pepper_mozzarella_hero",
+  price: 895,
+  menu_category: MenuCategory.find_by("hero")
+)
+MenuItem.create(
+  name: "chicken_cutlet_lettuce_tomatoes_onions_hero",
+  price: 795,
+  menu_category: MenuCategory.find_by("hero")
+)
+MenuItem.create(
+  name: "eggplant_roasted_peppers_mozzarella_hero",
+  price: 895,
+  menu_category: MenuCategory.find_by("hero")
+)
+MenuItem.create(
+  name: "italian_cheese_steak_hero",
+  price: 895,
+  menu_category: MenuCategory.find_by("hero")
+)
+MenuItem.create(
+  name: "italian_combo_hero",
+  price: 795,
+  menu_category: MenuCategory.find_by("hero")
+)
+MenuItem.create(
+  name: "pepper_egg_hero",
+  price: 795,
+  menu_category: MenuCategory.find_by("hero")
+)
+MenuItem.create(
+  name: "the_calabria_hero",
+  price: 995,
+  menu_category: MenuCategory.find_by("hero")
+)
 
 # ==================================================== #
 # ====================[USERS]========================= #
 # ==================================================== #
 
-User.create(username: 'chris', email: 'chris@calabria.com', password: 'abc123')
+User.create(username: 'chris', email: 'chris@calabria.com', password: 'abc')
